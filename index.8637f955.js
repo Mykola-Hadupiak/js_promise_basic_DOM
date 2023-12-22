@@ -1,0 +1,3 @@
+/* eslint-disable no-console */var e=document.querySelector(".logo"),n=document.querySelector("body"),o=new Promise(function(n){e.addEventListener("click",function(){n("Promise was resolved!")})}),c=new Promise(function(e,n){setTimeout(function(){n("Promise was rejected!")},3e3)});o.then(function(e){n.insertAdjacentHTML("beforeend",'\n      <div class="message">\n        '.concat(e,"\n      </div>\n    "))}).catch(function(e){console.warn(e)}),c.then(function(e){console.log(e)}).catch(function(e){n.insertAdjacentHTML("beforeend",'\n      <div class="message error-message">\n        '.concat(e,"\n      </div>\n    "))});//# sourceMappingURL=index.8637f955.js.map
+
+//# sourceMappingURL=index.8637f955.js.map
